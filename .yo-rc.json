@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Erik Christianson",
+      "authorEmail": "internet.erik@gmail.com",
+      "authorUrl": "https://www.nonkantradiction.com"
+    }
+  }
+}
