@@ -1,0 +1,17 @@
+.animate-when-visible {
+  position: relative;
+  top: 36vh;
+  opacity: 0;
+  transition: opacity 4s ease-in-out, top 2s ease-in-out;
+
+  &.animate-when-visible--animated {
+    top: 0;
+    opacity: 1;
+  }
+
+	@media all and (max-width: $bp-md) {
+		top: 0;
+		opacity: 1;
+	}
+
+}

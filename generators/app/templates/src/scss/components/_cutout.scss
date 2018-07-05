@@ -1,0 +1,11 @@
+.cutout {
+  left: 50%;
+
+  &.cutout--back {
+    transform: translateX(-50%) rotateZ(5deg);
+  }
+
+  &.cutout--forward {
+    transform: translateX(-50%) rotateZ(-5deg);
+  }
+}

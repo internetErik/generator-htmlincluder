@@ -1,0 +1,9 @@
+.enlarge-while-in-view {
+	@media #{nth(nth($bp-md-mx, 2), 2)} {
+		transition: 0.0s;
+	}
+	@media #{nth(nth($bp-lgx-mx, 2), 2)} {
+  	transform-origin: center;
+  	transition: transform .1s ease-in;
+	}
+}
