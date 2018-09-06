@@ -7,15 +7,15 @@ module.exports = class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
     this.log(
-      yosay(`Welcome to the fantastic ${chalk.red('generator-htmlincluder')} generator!`)
+      yosay(`Welcome to the finest ${chalk.red('generator-dev')} generator!`)
     );
 
     const prompts = [
       {
-        type: 'confirm',
-        name: 'someAnswer',
-        message: 'Would you like to enable this option?',
-        default: true
+        type: 'input',
+        name: 'projectName',
+        message: 'Name your project?',
+        default: 'your-html-project'
       }
     ];
 
@@ -27,12 +27,14 @@ module.exports = class extends Generator {
 
   writing() {
     this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
+      this.templatePath(),
+      this.destinationPath(this.props.projectName),
     );
   }
 
   install() {
-    this.installDependencies();
+    this.installDependencies({
+      bower: false,
+    });
   }
 };

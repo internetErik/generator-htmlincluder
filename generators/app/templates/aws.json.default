@@ -1,0 +1,11 @@
+{
+  "region": "us-east-1",
+  "params": {
+    "Bucket": ""
+  },
+  "credentials": {
+    "accessKeyId": "",
+    "secretAccessKey": "",
+    "signatureVersion": "v3"
+  }
+}

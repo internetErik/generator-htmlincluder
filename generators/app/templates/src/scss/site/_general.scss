@@ -1,0 +1,15 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+.navigation-target {
+  display: block;
+  position: relative;
+  top: -110px;
+  visibility: hidden;
+}

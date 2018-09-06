@@ -1,0 +1,9 @@
+.header {
+  @media all and (max-height: $bp-h-sm) {
+    height: $height-header-sm;
+
+    .header__container {
+      height: $height-header-sm;
+    }
+  }
+}

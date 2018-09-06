@@ -1,0 +1,13 @@
+.menu {
+  height: calc(100vh - #{$height-header});
+
+  @media all and (max-height: $bp-h-sm) {
+    width: 100%;
+    top: 7vh;
+    height: calc(100vh - #{$height-header-sm});
+  }
+
+  @media all and (max-width: $bp-sm) {
+    height: calc(100vh - #{$height-header-sm});
+  }
+}
